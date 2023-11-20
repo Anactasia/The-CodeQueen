@@ -12,7 +12,7 @@ define mother = Character('Мама',image='mother', color="#B13AEE", callback=n
 
 
 define slowdissolve = Dissolve(.5)
-define slowdissolve1 = Dissolve(2.5)
+define slowdissolve1 = Fade(2.5)
 
 image gg внедоумении1 = At('gg внедоумении', sprite_highlight('gg'))
 image gg задумчивая1 = At('gg задумчивая', sprite_highlight('gg'))
