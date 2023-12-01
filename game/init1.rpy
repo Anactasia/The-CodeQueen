@@ -5,7 +5,8 @@ define scientist = Character('Ученый',image='scientist', color="#B13AEE", 
 define robot = Character('Нейроникс.v.01',image='robot', color="#B13AEE", callback=name_callback, cb_name="robot")
 define kate = Character('Катя',image='kate', color="#B13AEE", callback=name_callback, cb_name="kate")
 define mother = Character('Мама',image='mother', color="#B13AEE", callback=name_callback, cb_name="mother")
-
+define anna = Character('Аня',image='anna', color="#B13AEE", callback=name_callback, cb_name="anna")
+define roma = Character('Рома',image='roma', color="#B13AEE", callback=name_callback, cb_name="roma")
 
 
 
@@ -24,14 +25,32 @@ image gg угрюмая1 = At('gg угрюмая', sprite_highlight('gg'))
 image gg удивленная1 = At('gg удивленная', sprite_highlight('gg'))
 
 image mike обычный1 = At('mike обычный', sprite_highlight('mike'))
+image mike улыбчивый1 = At('mike улыбчивый', sprite_highlight('mike'))
+image mike задумчивый1 = At('mike задумчивый', sprite_highlight('mike'))
+
 
 image senior_gpt обычный1 = At('senior_gpt обычный', sprite_highlight('senior_gpt'))
 image senior_gpt ухмылка1 = At('senior_gpt ухмылка', sprite_highlight('senior_gpt'))
 
 image robot обычный1 = At('robot обычный', sprite_highlight('robot'))
+image robot ошибка1 = At('robot ошибка', sprite_highlight('robot'))
+
 
 image kate обычная1 = At('kate обычная', sprite_highlight('kate'))
+image kate задумчивая1 = At('kate задумчивая', sprite_highlight('kate'))
 
 image scientist обычный1 = At('scientist обычный', sprite_highlight('scientist'))
 
 image mother обычная1 = At('mother обычная', sprite_highlight('mother'))
+image mother улыбчивая1 = At('mother улыбчивая', sprite_highlight('mother'))
+image mother злая1 = At('mother злая', sprite_highlight('mother'))
+
+image anna обычная1 = At('anna обычная', sprite_highlight('anna'))
+image anna задумчивая1 = At('anna задумчивая', sprite_highlight('anna'))
+
+
+image roma обычный1 = At('roma обычный', sprite_highlight('roma'))
+
+
+
+
