@@ -1,40 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 5, in script call
-    call scene_6
-  File "game/script.rpy", line 265, in script
-    main_character обычная1 "— Привет, мам… Да как тебе сказать.. Если честно, ужасно."
-KeyError: 'name_mc'
+  File "game/script.rpy", line 9, in script call
+    call scene_8 from _call_scene_8
+  File "game/script.rpy", line 332, in script call
+    call change_character(anna, "обычный1")
+  File "game/script.rpy", line 533, in script
+    with Dissolve
+Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x00000000056b8eb0>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000575a3d0>}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 5, in script call
-    call scene_6
-  File "game/script.rpy", line 265, in script
-    main_character обычная1 "— Привет, мам… Да как тебе сказать.. Если честно, ужасно."
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\character.py", line 1335, in __call__
-    who = self.prefix_suffix("who", self.who_prefix, who, self.who_suffix)
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\character.py", line 1251, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\character.py", line 1231, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
-KeyError: 'name_mc'
+  File "game/script.rpy", line 9, in script call
+    call scene_8 from _call_scene_8
+  File "game/script.rpy", line 332, in script call
+    call change_character(anna, "обычный1")
+  File "game/script.rpy", line 533, in script
+    with Dissolve
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\display\core.py", line 3927, in instantiate_transition
+    raise Exception("Expected transition to be a displayable, not a %r" % trans)
+Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x00000000056b8eb0>, 'new_widget': <renpy.display.layout.Fixed object at 0x000000000575a3d0>}>
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 The CodeQueen 1.0
-Sat Nov 18 16:51:41 2023
+Sat Dec  9 01:55:23 2023

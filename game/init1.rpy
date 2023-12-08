@@ -40,6 +40,7 @@ image kate обычная1 = At('kate обычная', sprite_highlight('kate'))
 image kate задумчивая1 = At('kate задумчивая', sprite_highlight('kate'))
 
 image scientist обычный1 = At('scientist обычный', sprite_highlight('scientist'))
+image scientist угрюмый1 = At('scientist угрюмый', sprite_highlight('scientist'))
 
 image mother обычная1 = At('mother обычная', sprite_highlight('mother'))
 image mother улыбчивая1 = At('mother улыбчивая', sprite_highlight('mother'))
