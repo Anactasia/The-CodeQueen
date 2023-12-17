@@ -1,6 +1,6 @@
 define senior_gpt = Character('Senior gpt', image='senior_gpt', color="#183DBF",callback=name_callback, cb_name="senior_gpt")
 define main_character = Character('[name_mc]',image="gg", color="#47C436",callback=name_callback, cb_name="gg")
-define mike = Character('Майк',image='mike', color="#B13AEE", callback=name_callback, cb_name="mike")
+define mike = Character('Макс',image='mike', color="#B13AEE", callback=name_callback, cb_name="mike")
 define scientist = Character('Ученый',image='scientist', color="#B13AEE", callback=name_callback, cb_name="scientist")
 define robot = Character('Нейроникс.v.01',image='robot', color="#B13AEE", callback=name_callback, cb_name="robot")
 define kate = Character('Катя',image='kate', color="#B13AEE", callback=name_callback, cb_name="kate")
