@@ -14,7 +14,7 @@ label start:
     return
 
 label scene_1:
-    play music calm_music fadeout 1
+    play music calm fadeout 1
     scene classroom
     pause 2.0
 
