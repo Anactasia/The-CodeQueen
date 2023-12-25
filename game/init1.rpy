@@ -50,6 +50,15 @@ image gg смущенная1 = At('gg смущенная', sprite_highlight('gg'
 image gg угрюмая1 = At('gg угрюмая', sprite_highlight('gg'))
 image gg удивленная1 = At('gg удивленная', sprite_highlight('gg'))
 
+image gg пвнедоумении1 = At('gg пвнедоумении', sprite_highlight('gg'))
+image gg пзадумчивая1 = At('gg пзадумчивая', sprite_highlight('gg'))
+image gg писпуганная1 = At('gg писпуганная', sprite_highlight('gg'))
+image gg побычная1 = At('gg побычная', sprite_highlight('gg'))
+image gg прадостная1 = At('gg прадостная', sprite_highlight('gg'))
+image gg псмущенная1 = At('gg псмущенная', sprite_highlight('gg'))
+image gg пугрюмая1 = At('gg пугрюмая', sprite_highlight('gg'))ыыы
+image gg пудивленная1 = At('gg пудивленная', sprite_highlight('gg'))
+
 image mike обычный1 = At('mike обычный', sprite_highlight('mike'))
 image mike улыбчивый1 = At('mike улыбчивый', sprite_highlight('mike'))
 image mike задумчивый1 = At('mike задумчивый', sprite_highlight('mike'))
