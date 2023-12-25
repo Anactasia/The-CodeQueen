@@ -12,7 +12,7 @@ define roma = Character('Рома',image='roma', color="#E38F1C", callback=name_
 
 # Переходы
 
-define slowdissolve = Dissolve(.5)
+define slowdissolve = Dissolve(1)
 define slowdissolve1 = Fade(2.5)
 
 # Фоновая музыка
@@ -83,21 +83,21 @@ init:
 image lbs:
     "animated1/web_1.jpeg"
     pause 1
-    "animated1web_2.jpeg"
+    "animated1/web_2.jpeg"
     pause 1
-    "animated1web_3.jpeg"
+    "animated1/web_3.jpeg"
     pause 1
-    "animated1web_4.jpeg"
+    "animated1/web_4.jpeg"
     pause 1
-    "animated1web_5.jpeg"
+    "animated1/web_5.jpeg"
     pause 1
-    "animated1web_6.jpeg"
+    "animated1/web_6.jpeg"
     pause 1
     repeat
 
 
 init:
-    image web = SnowBlossom("webs", count=1, xspeed=(0), yspeed=(0))
+    image web1 = SnowBlossom("webs", count=1,xspeed=(0), yspeed=(0))
 
 image webs:
     "animated2/v_1.jpeg"
