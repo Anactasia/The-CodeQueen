@@ -119,3 +119,75 @@ image webs:
     "animated2/v_9.jpeg"
     pause .5
     repeat
+
+
+# init:
+#     image main = SnowBlossom("mains", count=1,xspeed=(0), yspeed=(0))
+
+# image mains:
+#     "animated3/screensaver_000.jpeg"
+#     pause 1.24
+#     "animated3/screensaver_014.jpeg"
+#     pause .27
+#     "animated3/screensaver_017.jpeg"
+#     pause .09
+#     "animated3/screensaver_018.jpeg"
+#     pause .09
+#     "animated3/screensaver_019.jpeg"
+#     pause .09
+#     "animated3/screensaver_020.jpeg"
+#     pause .09
+#     "animated3/screensaver_021.jpeg"
+#     pause .09
+#     "animated3/screensaver_022.jpeg"
+#     pause .09
+#     "animated3/screensaver_023.jpeg"
+#     pause .09
+#     "animated3/screensaver_024.jpeg"
+#     pause .09
+#     "animated3/screensaver_025.jpeg"
+#     pause .09
+#     "animated3/screensaver_026.jpeg"
+#     pause .09
+#     "animated3/screensaver_027.jpeg"
+#     pause .09
+#     "animated3/screensaver_028.jpeg"
+#     pause .09
+#     "animated3/screensaver_029.jpeg"
+#     pause 2
+#     "animated3/screensaver_052.jpeg"
+#     pause .09
+#     "animated3/screensaver_053.jpeg"
+#     pause .09
+#     "animated3/screensaver_054.jpeg"
+#     pause .09
+#     "animated3/screensaver_055.jpeg"
+#     pause .09
+#     "animated3/screensaver_056.jpeg"
+#     pause .09
+#     "animated3/screensaver_075.jpeg"
+#     pause .09
+#     "animated3/screensaver_076.jpeg"
+#     pause .09
+#     "animated3/screensaver_077.jpeg"
+#     pause .09
+#     "animated3/screensaver_078.jpeg"
+#     pause .09
+#     repeat
+
+# init:
+#     image main_scene = Movie(play="images/screensaver.mp4", size=(1920, 1080))
+
+# label main_menu:
+#     scene main_scene
+#     jump main_menu_screen
+
+# init:
+#     #на весь экран
+#     image movie = Movie(size=(config.screen_width, config.screen_height))
+ 
+# label main_menu:
+#     scene movie
+#     $ renpy.music.play("images/screensaver.ogv", channel="movie", loop=True) #видео (можно без звука)
+#     # $ renpy.music.play("muz.mp3", channel="music", loop=True) #мелодия для меню - не обязательно
+#     jump main_menu_screen

@@ -353,9 +353,10 @@ screen main_menu():
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
     ## заменять этот.
     tag menu
+    # add gui.main_menu_background #this can be commented out, i just put there as safety measure for the loops
 
     imagemap:
-        ground "gui/main_menu.png"
+        ground Movie(play="images/screensaver.ogv", loop=True, size=(1920, 1080))
         idle "gui/glavny_ekran0.png"
         hover "gui/glavny_ekran3.png"
 

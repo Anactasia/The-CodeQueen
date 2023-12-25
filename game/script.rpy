@@ -344,25 +344,25 @@ label scene_8:
     "*[name_mc] удивленно смотрит на них*"
     main_character удивленная1 "— Кто вы? Где я?? Что происходит?!"
 
-    call change_character(anna, "обычный")
+    call change_character(anna, "обычный") from _call_change_character
     roma обычный1 "— Тише, тише, не паникуй. Мы всё тебе расскажем, после того как ты расскажешь нам, как сюда попала?!"
 
-    call change_character(roma, "обычная")
+    call change_character(roma, "обычная") from _call_change_character_1
     anna обычная1 "— Не пытайся убежать. Твой костюм запрограммирован так, что тебе не удасться передвигаться по сетям."
     main_character удивленная1 "— Что? Какой костюм? Что за сети?! Ай, голова раскалывается…"
     "*Смотрит на свои руки*"
     main_character задумчивая1 "— Костюм…Паука? Я что на квесте каком то?"
 
-    call change_character(anna, "обычный")
+    call change_character(anna, "обычный") from _call_change_character_2
     roma обычный1 "— Ахаха, смешно. Еще и шутить успевает. Аня, она скоро тебя перешутит."
     
-    call change_character(roma, "обычная")
+    call change_character(roma, "обычная") from _call_change_character_3
     anna обычная1 "— Это меня то?! Над моими шутками сама Лия Веру смеялась… Ой, думаю, не стоило мне об этом говорить…"
     
-    call change_character(anna, "обычный")
+    call change_character(anna, "обычный") from _call_change_character_4
     roma обычный1 "— Ты что опять общалась с людьми?! Сколько можно говорить,что..."
     
-    call change_character(roma, "обычная")
+    call change_character(roma, "обычная") from _call_change_character_5
     anna обычная1 "— Кхе-кхе. Мы отходим от темы. Как ты сюда попала?"
 
     main_character обычная1 "— Я… Я не знаю. Последнее, что я помню это только то, что я поссорилась с мамой, ушла в свою комнату и нажала на кнопку компьютера.. После этого я оказалась здесь."
@@ -378,7 +378,7 @@ label scene_8:
     roma обычный1 "— Не говори глупости. Первым делом она бы прошла через твой код."
     roma обычный1 "— Посмотри на нее, она еще подросток. Это просто какая-то ошибка. Сейчас мы во всем разберемся."
     
-    call change_character(anna, "обычный")
+    call change_character(anna, "обычный") from _call_change_character_6
     show gg задумчивая at left
     with dissolve
 
@@ -388,7 +388,7 @@ label scene_8:
     main_character задумчивая1 "— Ничего такого я не помню. Я только…"
     main_character задумчивая1 "— Только была на дне открытых дверей в своем городе. И там…"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_7
     anna обычная1 "— Продолжай."
     main_character обычная1 "— И там был паук, который меня укусил."
     anna задумчивая1 "— Паук???"
@@ -412,85 +412,85 @@ label scene_8:
     anna обычная1 "— А этот паук, он случайно не был каким-то другим?"
     main_character задумчивая1 "— Это был радиопаук, разработанный в лаборатории университета…"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_8
     roma обычный1 "— Он в порядке?"
     main_character смущенная1 "— Получилось так, что я испугалась и случайной его прихлопнула…"
     roma обычный1 "— Что ты сделала?!"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_9
     anna обычная1 "— Всё, нам конец. Наша вселенная обречена."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_10
     roma обычный1 "— Сейчас всё решим."  
     main_character смущенная1 "— А кто вы такие? Почему в костюмах? Почему я в костюме? Где я и …"
     roma обычный1 "— Тише-тише. Давай всё по порядку."  
     $ count_answer = [0, 0, 0, 0]
-    call Choose_from_scenes_8
+    call Choose_from_scenes_8 from _call_Choose_from_scenes_8
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_11
     main_character обычная1 "— Ага. Мне стало чуточку понятнее. Но кто ты?"
     anna обычная1 "— Ах, да. Я не представилась. Меня зовут Аня. Я - frontend - разработик. Занимаюсь созданием пользовательского интерфейса сайта."
     anna обычная1 "— Отвечаю за функциональность интерфейса, также и за оптимизацию сайта, чтобы оно загружалось быстро и работало без сбоев. Простыми словами, создаю то, что пользователи видят и с чем взаимодействуют, чтобы это было удобно и привлекательно."
     main_character обычная1 "— То есть вы вместе разрабатываете сайты?"
     anna обычная1 "— Да. Мы создаем сайты, придумываем новый функционал, дизайн, логику. Бывает, что мы делимся новой информацией на ваших форумах, где уже программисты твоей вселенной используют их для своих сайтов."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_12
     roma обычный1 "— Также мы следим, чтобы ваши сайты не ломались и работали стабильно."
     main_character задумчивая1 "— Ого, не знала, что этим вы занимаетесь."
     main_character задумчивая1 "— Сколько я уже тут нахожусь? Я же смогу вернуться в свою вселенную?! Да?!"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_13
     anna обычная1 "— Конечно сможешь, ты же смогла сюда попасть, значит и обратно сможешь. Наверное…"
     anna задумчивая1 "— Но мы очень нуждаемся в твоей помощи."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_14
     roma обычный1 "— Мы храним алгоритмы, информацию, новые технологии, которые еще не доступны людям. Ваша вселенная еще на стадии своего расцвета, поэтому, чтобы принять и изучить их требуется больше времени."
     roma обычный1 "— Этот \"кто-то\" пытается заполучить всю новую информацию. Для этого он запрограммировал Нейрониксов, так ведь их зовут?"
     main_character задумчивая1 "— Да, они используются для помощи студентам."
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_15
     anna обычная1 "— Ага, теперь еще, чтобы преодолеть барьер."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_16
     roma обычный1 "— Мы не знаем, как он воспользуется новой информацией. Если этот человек намерен враждебно, значит, он хочет нарушить баланс вселенных. А если это сделать, то он сможет повлиять на многие судьбы, в его власти будет находиться вся информация мира."
     main_character задумчивая1 "— Но чем я вам помогу? Я ничего не умею…"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_17
     anna обычная1 "— Мы бы не просили твоей помощи, если бы время не поджимало. Прости, но это правда."
     anna обычная1 "— Он смог пройти первый барьер, поэтому ему осталось совсем чуть-чуть до разрушения вселенных."
     main_character задумчивая1 "— …"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_18
     roma обычный1 "— Наши программисты создали паука…"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_19
     anna обычная1 "— Которого ты беспощадно убила…Хороший был паук, добрый."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_20
     roma обычный1 "— Это уже неважно. Через несколько дней после запуска паука мы потеряли с ним связь."
     main_character задумчивая1 "— Почему бы не отправить еще пауков?"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_21
     anna обычная1 "— Мы пытались… Не получилось, результат один и тот же."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_22
     roma обычный1 "— Поэтому нам нужна твоя помощь. Теперь ты можешь перемещаться через вселенные, это значительно облегчает нам работу. Всё, что тебе нужно, правильно закрыть этот портал, то есть переписать код сайта…"
     roma обычный1 "— С помощью этого кода, мы с этой стороны сможем контролировать Нейрониксов. Мы больше не допустим, чтобы кто-то знал о нашей вселенной и вмешивался в ее стабильность."
     main_character задумчивая1 "— Стойте, но я не уверена, что у меня получится. Что, если я ошибусь и всё человечество будет обречено?"
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_23
     anna обычная1 "— Не волнуйся, мы тебя научим."
     
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_24
     roma обычный1 "— Да, сперва мы покажем и расскажем, что нужно сделать. Ну как? Ты согласна?"
     main_character задумчивая1 "— Я… я не знаю…"
     
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_25
     anna обычная1 "— [name_mc], именно тебе каким-то образом передалась возможность передвигаться через вселенные, случайность это была, или действительно дар, мы не знаем. Но мы точно знаем, что это не просто так. Поверь в себя и свои сила, также как мы верим в твои, ты наш единственный путь к спасению."
     main_character задумчивая1 "— …"
     main_character задумчивая1 "— Хорошо, я постараюсь…"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_26
     roma обычный1 "— Тогда начнем наше обучение. Садись за компьютер."
 
     jump scene_9
@@ -502,7 +502,7 @@ label Choose_from_scenes_8():
         menu:
             "Кто вы?":
                 $ count_answer[0] = 1
-                call change_character(anna, "обычный1")
+                call change_character(anna, "обычный1") from _call_change_character_27
                 roma обычный1 "— Я Рома - backend-разработчик, отвечающий за внутреннюю и вычислительную логику WEB-сайта."
                 roma обычный1 "— Отвечаю за обработку и хранение данных, за то, как сайт будет реагировать на действие пользователя."
                 roma обычный1"— В основном работаю с базами данных, серверами и различными Грубо говоря, я отвечаю за всё, что происходит под \"капотом\" сайта."
@@ -510,13 +510,13 @@ label Choose_from_scenes_8():
 
             "Где я? Офис выглядит привлекательно.":
                 $ count_answer[1] = 1
-                call change_character(anna, "обычный1")
+                call change_character(anna, "обычный1") from _call_change_character_28
                 roma обычный1 "— Ты находишься во вселенной пауков-программистов. Она называется: \"Всемирная паутина\". Сейчас мы в одном из офисов WEB-разработки. Сегодня выходной, поэтому некоторые пауки работают удаленно."
-                call change_character(roma, "обычная1")
+                call change_character(roma, "обычная1") from _call_change_character_29
                 anna обычная1 "— Да, а мы дежурим. Впервые не пожалела, что сегодня моя смена. Столько всего происходит! Вау"
-                call change_character(anna, "обычный1")
+                call change_character(anna, "обычный1") from _call_change_character_30
                 roma обычный1 "— Не стоит этому радоваться."
-                call change_character(roma, "обычная1")
+                call change_character(roma, "обычная1") from _call_change_character_31
                 anna обычная1 "— Не будь занудой."
 
                 jump Choose_from_scenes_8
@@ -524,18 +524,18 @@ label Choose_from_scenes_8():
             "Что это за костюм на мне? Будто здесь сходка фанатов Марвел.":
                 $ count_answer[2] = 1
 
-                call change_character(anna, "обычный1")
+                call change_character(anna, "обычный1") from _call_change_character_32
                 roma обычный1 "— Эти костюмы предназначены для быстрого перемещения из одной сети в другую, так пауки-разработчики могут без проблем контактировать друг с другом, делиться информацией и многое другое."
-                call change_character(roma, "обычная1")
+                call change_character(roma, "обычная1") from _call_change_character_33
                 anna обычная1 "— А еще костюмы круто на нас сидят."
                 jump Choose_from_scenes_8
 
             "Что за паук меня укусил? До сих пор болит…":
                 $ count_answer[3] = 1
                 
-                call change_character(roma, "обычная1")
+                call change_character(roma, "обычная1") from _call_change_character_34
                 anna обычная1 "— Как ты, наверное, догадалась этот паук был необычным. Оооочень необычным."
-                call change_character(anna, "обычный1")
+                call change_character(anna, "обычный1") from _call_change_character_35
                 roma обычный1 "— Радиопаук был запрограммирован, чтобы спасти нашу вселенную. Кто-то, кого не принято у нас называть по имени, пытается проделать \"дыру\" в сайте, чтобы открыть портал, который предназначен для перемещения через вселенные."
                 jump Choose_from_scenes_8
 
@@ -591,7 +591,7 @@ label scene_9:
     roma обычный1 "— После изучения языка программирования важно освоить работу с фреймворками, которые упрощают процесс разработки, например, Django для Python, Express.js для JavaScript, Ruby on Rails для Ruby или Laravel для PHP."
 
     $ count_answer = [0, 0]
-    call Choose1_from_scenes_9
+    call Choose1_from_scenes_9 from _call_Choose1_from_scenes_9
 
     roma обычный1 "— Далее следует изучение баз данных, таких как MySQL, PostgreSQL или MongoDB, чтобы уметь хранить и обрабатывать информацию на веб-сайте."
     
@@ -643,7 +643,7 @@ label scene_9:
     "*Получен код*"
     roma обычный1 "— Думаю, этой информации хватит. Дальше Аня тебе всё расскажет."
     
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_36
     anna обычная1 "— Надеюсь, что он не сильно тебя нагрузил своей скучной и монотонной информацией. Цифры, числа, данные, алгоритмы… Ужас."
     main_character обычная1 "— Всё нормально, я всё поняла."
     anna обычная1 "— Хорошо. Начнем."
@@ -676,7 +676,7 @@ label scene_9:
     anna задумчивая1 "— Ой, заговорилась. Что тебе непонятно было?"
 
     $ count_answer = [0, 0, 0, 0, 0, 0, 0]
-    call Choose2_from_scenes_9
+    call Choose2_from_scenes_9 from _call_Choose2_from_scenes_9
 
     anna обычная1 "— В общем, мой ход работы:"
     anna обычная1 "— Я подключаюсь к работе над проектом, когда готов макет от дизайнера. На этом этапе мне необходимо визуализировать сайт и сделать его удобным для пользователей."
@@ -693,25 +693,25 @@ label scene_9:
     main_character задумчивая1 "— Но как я попаду в лабораторию, завтра воскресенье, многие кабинеты закрыты, тем более в университет пускают только со студенческим."
     anna задумчивая1 "— Не волнуйся, мы позаботились об этом. Тебя мы отправим напрямую в лабораторию, туда же, куда мы отправляли пауков. Там безлюдно и бесшумно."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_37
     roma обычный1 "— Через любую сеть можно подключиться к компьютеру. Мы бы отправили тебя сразу же к главному компьютеру, но это очень опасно и рискованно."
     roma обычный1 "— Сейчас компьютер, на котором писали сайт  и проделали дыру, находится в очень нестабильном состоянии. Любой прыжок может тебя покалечить."
     main_character задумчивая1 "— Но как мне переписать код сайта, если при каждом запуске компьютера, я оказываюсь в этой вселенной?"
     roma обычный1 "— Не при каждом, в прошлый раз ты была на эмоциях и не контролировала себя. Теперь ты сможешь решить, чего ты на самом деле хочешь: включить компьютер, или попасть сюда. Думаю, с этим проблем не будет."
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_38
     anna обычная1 "— Чтобы ты не волновалась, мы будем на связи через сайт. Найти ты его сможешь написав: pauki.ru"
     main_character задумчивая1 "— Вы и так можете..."
      
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_39
     roma обычный1 "— Думаю, на сегодня можно закончить."
     
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_40
     anna обычная1 "— Ух, мы хорошо поработали сегодня. [name_mc], ждем тебя завтра вечером. Выспись и отдохни после таких приключений."
     main_character задумчивая1 "— Обязательно. Но как мне попасть домой?"
     anna задумчивая1 "— Эта кабинка с компьютером здесь не просто так."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_41
     roma обычный1 "— Кнопка пуска компьютера."
     main_character обычная1 "— Логично."
     
@@ -810,9 +810,9 @@ label scene_10:
 
     menu:
         "Вернуться обратно во вселенную пауков.":
-            call go_back
+            call go_back from _call_go_back
         "Пообщаться с Аней и Ромой через сайт.":
-            call chat
+            call chat from _call_chat
 
     show gg радостная at center
     with move
@@ -856,17 +856,17 @@ label go_back:
     $ renpy.notify("Настроение Мейв поднялось")
     main_character обычная "— Я поняла. На сегодня с прыжками покончено \U0001F604. Что будет, если завтра у меня не получится к вам попасть?"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_42
     roma обычный1 "— [name_mc], не глупи. Ты сегодня показала прекрасный результат."
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_43
     anna обычная1 "— Всё у тебя получится. Ты уже 2 раза прыгала, думаешь, что 3 не осилишь?"
     main_character обычная "— Спасибо вам… Эти слова многое для меня значат."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_44
     roma обычный1 "— Так-то ты уже должна была спать. Поэтому спокойной ночи, [name_mc]!"
     
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_45
     anna обычная1 "— Сладких снов. Завтра в 18 ждем тебя. Хорошенько отдохни!"
     main_character обычная "— Спокойной ночи."
 
@@ -895,18 +895,18 @@ label chat:
         "Почему он выглядит так, будто я общаюсь ботами? А интерфейс походит на 2000 года…":
             anna обычная1 "— Хы. А кто сказал, что мы не ботики?! *смеющийся смайлик* Шутка. Мы специально не заморачивались с дизайном."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_46
     roma обычный1 "— Да, с 2000 годов сайт не обновлялся…"
     main_character обычная "— Хахах)"
     main_character обычная "— Надеюсь, что завтра я не облажаюсь. Не очень хочется вас подводить…"
     roma обычный1 "— Не переживай. Ты сегодня показала прекрасный результат."
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_47
     anna обычная1 "— Да, впервые согласна с Ромой. Ты молодчина!"
     main_character обычная "— \U0001F449 \U0001F448 Спасибо большое. Я вас не подведу, обещаю"
     anna обычная1 "— Думаю, тебе уже пора идти спать! Спокойной ночи!"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_48
     roma обычный1 "— Хороших снов)"
     main_character обычная "— А вам хорошего дежурства, без приключений!"
 
@@ -937,20 +937,20 @@ label scene_11:
 
     roma обычный1 "— Привет. Рады тебя видеть."
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_49
     anna обычная1 "— Как тебе полет?"
     main_character задумчивая1 "— В этот раз лучше."
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_50
     roma обычный1 "— Тогда еще раз напомним тебе о нашем плане: тебе нужно переписать код, написанный на главном компьютере. Будь осторожна, тебя никто не должен увидеть. Когда у тебя получится это сделать, об остальном позаботимся уже мы."
     
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_51
     anna обычная1 "— Сегодня никого не должно быть в лаборатории, так что всё должно пройти спокойно. Если услышишь шаги или кто-то будет ломиться к тебе, быстро возвращайся в нашу вселенную."
     main_character задумчивая1 "— Что будет, если я не смогу переписать код?"
 
     anna обычная1 "— Давай не будем об этом думать, ты справишься!!"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_52
     roma обычный1 "— Готова?"
     main_character обычная1 "— Да!"
 
@@ -975,7 +975,7 @@ label scene_12:
     main_character задумчивая "— Так, вот он. Ну что же. Приступим."
 
     $ answers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    call main_battle
+    call main_battle from _call_main_battle
 
     if sum(answers) >= 7:
         main_character внедоумении "— Я… Я… я смогла??"
@@ -1045,101 +1045,101 @@ label main_battle:
     menu:
         "1.Что такое backend-разработка?"
         "a) Разработка серверной части сайта":
-            call check('a', 'a')
+            call check('a', 'a') from _call_check
             $ answers[0] = 1
         "b) Разработка пользовательского интерфейса":
-            call check('b', 'a')
+            call check('b', 'a') from _call_check_1
         "с) Разработка дизайна сайтов":
-            call check('c', 'a')
+            call check('c', 'a') from _call_check_2
     menu:
         "2. Что такое API?"
         "a) Инструмент для создания пользовательского интерфейса":
-            call check('a', 'b')
+            call check('a', 'b') from _call_check_3
         "b) Программный интерфейс для взаимодействия компонентов приложения":
-            call check('b', 'b')
+            call check('b', 'b') from _call_check_4
             $ answers[1] = 1
         "c) Платформа для создания мобильных приложений":
-            call check('c', 'b')
+            call check('c', 'b') from _call_check_5
     
     menu:
         "3. Что такое база данных?"
         "a) Набор инструментов для создания веб-сайтов":
-            call check('a', 'b')
+            call check('a', 'b') from _call_check_6
         "b) Место для хранения и организации данных":
-            call check('b', 'b')
+            call check('b', 'b') from _call_check_7
             $ answers[2] = 1
         "c) Графическое представление пользовательского интерфейса":
-            call check('c', 'b')
+            call check('c', 'b') from _call_check_8
     
     menu:
         "4. Какие языки программирования обычно используются для backend-разработки?"
         "a) HTML и CSS":
-            call check('a', 'c')
+            call check('a', 'c') from _call_check_9
         "b) C# и Ruby":
-            call check('b', 'c')
+            call check('b', 'c') from _call_check_10
         "c) Python и JavaScript":
-            call check('c', 'c')
+            call check('c', 'c') from _call_check_11
             $ answers[3] = 1
 
     menu:
         "5. Какие протоколы наиболее распространены при разработке бекенда?"
         "a) WebSocket ":
-            call check('a', 'c')
+            call check('a', 'c') from _call_check_12
         "b) SSH":
-            call check('b', 'c')
+            call check('b', 'c') from _call_check_13
         "c) HTTP":
-            call check('c', 'c')
+            call check('c', 'c') from _call_check_14
             $ answers[4] = 1
     
     menu:
         "6.Что такое фронтенд разработка?"
         "a) Это создание веб-сайтов и приложений на сервере":
-            call check('a', 'b')
+            call check('a', 'b') from _call_check_15
         "b) Это создание пользовательского интерфейса веб-сайта":
-            call check('b', 'b')
+            call check('b', 'b') from _call_check_16
             $ answers[5] = 1
         "c) Это создание серверной части веб-сайта или приложения":
-            call check('c', 'b')
+            call check('c', 'b') from _call_check_17
     
     menu:
         "7.Какие языки программирования используются для фронтенд разработки?"
         "a) Java и C++":
-            call check('a', 'b')
+            call check('a', 'b') from _call_check_18
         "b) HTML, CSS и JavaScript":
-            call check('b', 'b')
+            call check('b', 'b') from _call_check_19
             $ answers[6] = 1
         "c) Python и Ruby":
-            call check('c', 'b')
+            call check('c', 'b') from _call_check_20
     
     menu:
         "8.Какие фреймворки или библиотеки широко используются в фронтенд разработке?" 
         "a) React и Angular":
-            call check('a', 'a')
+            call check('a', 'a') from _call_check_21
             $ answers[7] = 1
         "b) Django":
-            call check('b', 'a')
+            call check('b', 'a') from _call_check_22
         "c) SQLAlchemy":
-            call check('c', 'a')
+            call check('c', 'a') from _call_check_23
     
     menu:
         "9. Какие основные навыки должен иметь фронтенд разработчик?" 
         "a) Дизайн и маркетинг":
-            call check('a', 'b')
+            call check('a', 'b') from _call_check_24
         "b) Кодирование, аналитическое мышление и коммуникация":
-            call check('b', 'b')
+            call check('b', 'b') from _call_check_25
             $ answers[8] = 1
         "c) Музыкальные способности и знание истории":
-            call check('c', 'b')
+            call check('c', 'b') from _call_check_26
     
     menu:
         "10. Для чего используется JavaScript в работе фронтенд разработчика?" 
         "a) Для создания интерфейсов и взаимодействия с пользователем":
-            call check('a', 'a')
+            call check('a', 'a') from _call_check_27
             $ answers[9] = 1
         "b) Для работы с базами данных и серверными запросами":
-            call check('b', 'a')
+            call check('b', 'a') from _call_check_28
         "c) Для оптимизации скорости загрузки сайта":
-            call check('c', 'a')
+            call check('c', 'a') from _call_check_29
     
     return
 
@@ -1170,16 +1170,16 @@ label scene_13_1:
     "*Аня заключила в объятия [name_mc]*"
     anna обычная1 "— Ты справилась! Мы в тебе не сомневались!"
 
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_53
     roma обычный1 "— Да, ты большая молодец! Ты прирожденная разработчица."
     main_character радостная1 "— Я сама от себя не ожидала!"
     roma обычный1 "— Ты же в 11 классе? Если я не ошибаюсь, то после этого класса многие люди выбирают себе профессию?"
     main_character задумчивая1 "— Да… точно..."
 
-    call change_character(roma, "обычная1")
+    call change_character(roma, "обычная1") from _call_change_character_54
     anna обычная1 "— Надеюсь, что ты пойдешь во фронтенд разработку!!!"
     
-    call change_character(anna, "обычный1")
+    call change_character(anna, "обычный1") from _call_change_character_55
     roma обычный1 "— Думаю, она будет beckend-разработчиком."
     
     main_character задумчивая1 "— Я буду…"
@@ -1188,14 +1188,14 @@ label scene_13_1:
         "Я буду…"
         "Я буду backend - разработчицей!":
             roma обычный1 "— Отлично!"
-            call change_character(roma, "обычная1")
+            call change_character(roma, "обычная1") from _call_change_character_56
             anna обычная1 "— Мммм… Ну ладно, будем тогда сотрудничать."
             main_character радостная1 "— Спасибо вам большое!"
             anna обычная1 "— Это тебе спасибо!"
         "Я стану frontend-разработчицей!":
-            call change_character(roma, "обычная1")
+            call change_character(roma, "обычная1") from _call_change_character_57
             anna обычная1 "— Ураааа, если будут вопросы, ты знаешь, куда написать!"
-            call change_character(anna, "обычный1")
+            call change_character(anna, "обычный1") from _call_change_character_58
             roma обычный1 "— Если ты вдруг передумаешь, я всегда тебе помогу. Удачи тебе!"
             main_character радостная1 "— Спасибо вам! Я вас никогда не забуду!"
     return

@@ -1,32 +1,37 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 9, in script call
-    call scene_12 from _call_scene_12
-  File "game/script.rpy", line 980, in script
-    if sum(answers >= 7):
-  File "game/script.rpy", line 980, in <module>
-    if sum(answers >= 7):
-TypeError: '>=' not supported between instances of 'RevertableList' and 'int'
+  File "game/gui.rpy", line 92, in script
+    define gui.main_menu_background = menuvideo
+  File "game/gui.rpy", line 92, in script
+    define gui.main_menu_background = menuvideo
+  File "game/gui.rpy", line 92, in <module>
+    define gui.main_menu_background = menuvideo
+NameError: name 'menuvideo' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 9, in script call
-    call scene_12 from _call_scene_12
-  File "game/script.rpy", line 980, in script
-    if sum(answers >= 7):
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2133, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\main.py", line 564, in main
+    renpy.game.context().run(node)
+  File "game/gui.rpy", line 92, in script
+    define gui.main_menu_background = menuvideo
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "game/gui.rpy", line 92, in script
+    define gui.main_menu_background = menuvideo
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2508, in execute
+    self.set()
+  File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 2522, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
   File "C:\Users\nasta\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 980, in <module>
-    if sum(answers >= 7):
-TypeError: '>=' not supported between instances of 'RevertableList' and 'int'
+  File "game/gui.rpy", line 92, in <module>
+    define gui.main_menu_background = menuvideo
+NameError: name 'menuvideo' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 The CodeQueen 1.0
-Mon Dec 25 15:11:29 2023
+Mon Dec 25 21:21:42 2023
