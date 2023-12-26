@@ -56,7 +56,7 @@ image gg писпуганная1 = At('gg писпуганная', sprite_highli
 image gg побычная1 = At('gg побычная', sprite_highlight('gg'))
 image gg прадостная1 = At('gg прадостная', sprite_highlight('gg'))
 image gg псмущенная1 = At('gg псмущенная', sprite_highlight('gg'))
-image gg пугрюмая1 = At('gg пугрюмая', sprite_highlight('gg'))ыыы
+image gg пугрюмая1 = At('gg пугрюмая', sprite_highlight('gg'))
 image gg пудивленная1 = At('gg пудивленная', sprite_highlight('gg'))
 
 image mike обычный1 = At('mike обычный', sprite_highlight('mike'))
@@ -83,6 +83,7 @@ image anna обычная1 = At('anna обычная', sprite_highlight('anna'))
 image anna задумчивая1 = At('anna задумчивая', sprite_highlight('anna'))
 
 image roma обычный1 = At('roma обычный', sprite_highlight('roma'))
+image roma угрюмый1 = At('roma угрюмый', sprite_highlight('roma'))
 
 
 
