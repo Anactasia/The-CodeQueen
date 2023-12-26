@@ -5,7 +5,7 @@ label start:
     $ name_mc = renpy.input("Как будут звать главную героиню?", length=12, default="Мейв", exclude="0123456789=+/.<>?,{}()&*^%$#@!:;|").strip()
     if name_mc == "":
         $ name_mc = "Мейв"
-    call scene_2 from _call_scene_2
+    call scene_10 from _call_scene_10
     # call scene_2
     # call scene_3
     # call scene_4
@@ -13,6 +13,7 @@ label start:
     return
 
 label scene_1:
+    stop music fadeout 0.5
     play music calm fadeout 1
     scene classroom
     play sound bell
@@ -205,6 +206,8 @@ label scene_4:
 
 
 label scene_5:
+    stop sound fadeout 1.0
+    play music calm fadeout 1
     scene university_corridor
     with slowdissolve1
 
@@ -214,7 +217,7 @@ label scene_5:
 
     scene laboratory
     with slowdissolve
-
+    stop sound fadeout 1.0
     play music distur_2 fadeout 1
 
     show gg внедоумении at left
@@ -297,6 +300,8 @@ label scene_6:
     jump scene_7
 
 label scene_7:
+    stop music fadeout 1
+    play music calm fadeout 1
     scene room
     with slowdissolve1
 
@@ -312,13 +317,15 @@ label scene_7:
     main_character угрюмая"Все только и делают, что указывают на мои ошибки. Будто я сама их не вижу."
 
     "*Нажимает на кнопку запуска компьютера*"
+    play sound start
     play sound closure 
     "*Искра*"
 
     jump scene_8
 
 label scene_8:
-
+    stop music fadeout 1
+    play music calm fadeout 1
     scene v_1
     with pixellate
     show webs 
@@ -556,6 +563,8 @@ label change_character(a, c):
 
 label scene_9:
 
+    stop music fadeout 1
+    play music calm fadeout 1
     scene computer
     with slowdissolve1
 
@@ -790,8 +799,11 @@ label Choose2_from_scenes_9():
 
 
 label scene_10:
+
+    stop music fadeout 1
+    play music calm fadeout 1
     scene room
-    with slowdissolve1
+    with pixellate
 
     "Комната [name_mc]"
     "[name_mc] просыпается в своей комнате"
@@ -822,8 +834,8 @@ label go_back:
     main_character задумчивая "— Что если я опять прыгну в другую вселенную?!"
     "*Закрывает глаза и думает о другой вселенной*"
     main_character задумчивая "— Виртуальная паутина..Виртуальная паутина..."
-    "*Нажимает на кнопку компьютера*"
-    "*Звуки включения Windows*"
+    "*Нажимает на кнопку запуска компьютера*"
+    play sound start
     main_character обычная "— Ничего не произошло?"
     "*Грустно вздыхает*"
     main_character обычная "— Значит, это был сон.Неужели название сайта тоже придумало мое воображение?"
@@ -867,12 +879,13 @@ label go_back:
     main_character обычная "— Спокойной ночи."
 
     hide anna
-    "*[name_mc] закрывает сайт и выключает компьютер*"
+    "[name_mc] закрывает сайт и выключает компьютер"
     return
     
 label chat:
     main_character обычная "— Так, хорошо. Если это был не сон, то я смогу пообщаться с Ромой и Аней через сайт. Надеюсь, что я не попаду опять в их вселенную."
-    "*Нажимает на кнопку компьютера*"
+    "*Нажимает на кнопку запуска компьютера*"
+    play sound start
     main_character обычная "— Фуф, пронесло. Какой там был сайт… Pauki.ru"
     main_character обычная "— Странный сайт. Что-то между сайтом знакомств и сайтом общения с ботами."
     "*Пишет: привет*"
@@ -908,18 +921,20 @@ label chat:
 
     hide roma 
 
-    "*[name_mc] закрывает сайт и выключает компьютер*"
+    "[name_mc] закрывает сайт и выключает компьютер"
 
     return
 
 
 label scene_11:
 
+    stop music fadeout 1
+    play music calm fadeout 1
     scene v_1
-    with slowdissolve1
+    with pixellate
     show webs
 
-    "*Виртуальная паутина* + переход"
+    "6 вечера следущего дня\n [name_mc] возвращается в \"Виртуальную паутину\""
 
     show gg прадостная 
     with dissolve
@@ -952,7 +967,7 @@ label scene_11:
 
     roma обычный1 "— Садись в кабинку. Она отправит тебя в лабораторию."
 
-    "*[name_mc] отправляется в лабораторию*"
+    "[name_mc] отправляется в лабораторию"
 
     jump scene_12
 
@@ -960,12 +975,12 @@ label scene_12:
     stop music fadeout 1
     play music distur_1 fadeout 1
 
-    scene laboratory with slowdissolve1
+    scene laboratory with pixellate
     show lbs
 
     show gg пвнедоумении
 
-    "*Лаборатория в университете*"
+    "Лаборатория в университете"
     main_character пвнедоумении "— Так, кажется, я на месте. Нужно найти главный компьютер."
     "*Рассматривает компьютеры*"
     main_character пвнедоумении "— Так, вот он. Ну что же. Приступим."
@@ -981,12 +996,12 @@ label scene_12:
         
         play sound step 
 
-        "*[name_mc] слышит шаги и разговор за дверью*"
+        "[name_mc] слышит шаги и разговор за дверью"
         main_character побычная "— Нужно уходить!"
 
         hide gg with dissolve
 
-        "*[name_mc] вернулась во вселенную пауков*"
+        "[name_mc] вернулась во вселенную пауков"
 
         show scientist обычный1 at right
         with dissolve
@@ -1016,10 +1031,10 @@ label scene_12:
         $ renpy.notify("Вам не удалось победить Senior gpt")
 
         play sound step 
-        "*[name_mc] слышит шаги и разговор за дверью*"
+        "[name_mc] слышит шаги и разговор за дверью"
         main_character писпуганная "— Я всё испортила…"
         hide gg with dissolve
-        "*[name_mc] возвращается во вселенную пауков*"
+        "[name_mc] возвращается во вселенную пауков"
 
         show scientist обычный1 at right
         with dissolve
@@ -1028,7 +1043,7 @@ label scene_12:
 
         scientist обычный1 "— Сэр, Нейроникс совершил прорыв! Сейчас я вам всё покажу!"
         senior_gpt обычный1 "— Ну-ну, не разочаруй меня!"
-        "*Ученый открывает дверь в лабораторию*"
+        "Ученый открывает дверь в лабораторию"
         scientist обычный1 "— Сейчас, сейчас. Всё вам покажу! Это прорыв..."
         "*Запускает компьютер и пытается показать код*"
         scientist обычный1 "— Мы смогли преодолеть 1 барьер. Наши Нейрониксы продолжают работать над кодом, еще день и мы осуществим задуманное!"
@@ -1154,16 +1169,16 @@ label scene_13_1:
     play music calm fadein 1
 
     scene v_1
-    with slowdissolve1
+    with fade
     show webs
 
-    "*Виртуальная паутина*"
+    "Виртуальная паутина"
     show gg прадостная at left
     with dissolve
     show anna обычная at right
 
     anna обычная1 "— [name_mc]!"
-    "*Аня заключила в объятия [name_mc]*"
+    "Аня заключила в объятия [name_mc]"
     anna обычная1 "— Ты справилась! Мы в тебе не сомневались!"
 
     call change_character(anna, "обычный1") from _call_change_character_53
