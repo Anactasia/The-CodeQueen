@@ -10,6 +10,10 @@ define mother = Character('Мама',image='mother', color="#B13AEE", callback=n
 define anna = Character('Аня',image='anna', color="#E36C1C", callback=name_callback, cb_name="anna")
 define roma = Character('Рома',image='roma', color="#E38F1C", callback=name_callback, cb_name="roma")
 
+# Плохая концовка
+
+define end = Character(None, kind=nvl)
+
 # Переходы
 
 define slowdissolve = Dissolve(1)
@@ -33,6 +37,10 @@ define audio.door = "audio/door_knock.mp3"
 define audio.hit = "audio/hit.mp3"
 define audio.keyboard = "audio/keyboard.mp3"
 define audio.step = "audio/step.mp3"
+define audio.clic = "audio/клик.mp3"
+define audio.entr = "audio/энтр.mp3"
+define audio.sms = "audio/сообщение.mp3"
+
 
 # GIF
 
