@@ -1,14 +1,14 @@
 # Персонажи 
 
-define senior_gpt = Character('Senior gpt', image='senior_gpt', color="#065AD0",callback=name_callback, cb_name="senior_gpt")
-define main_character = Character('[name_mc]',image="gg", color="#F818FF",callback=name_callback, cb_name="gg")
+define senior_gpt1 = Character('Senior gpt', image='senior_gpt', color="#A15DF9",callback=name_callback, cb_name="senior_gpt")
+define main_character1 = Character('[name_mc]',image="gg", color="#F818FF",callback=name_callback, cb_name="gg")
 define mike = Character('Макс',image='mike', color="#A15DF9", callback=name_callback, cb_name="mike")
-define scientist = Character('Ученый',image='scientist', color="#0D6CF2", callback=name_callback, cb_name="scientist")
-define robot = Character('Нейроникс.v.01',image='robot', color="#20B9F3", callback=name_callback, cb_name="robot")
+define scientist = Character('Ученый',image='scientist', color="#AE17D3", callback=name_callback, cb_name="scientist")
+define robot = Character('Нейроникс.v.01',image='robot', color="#E941F6", callback=name_callback, cb_name="robot")
 define kate = Character('Катя',image='kate', color="#A15DF9", callback=name_callback, cb_name="kate")
 define mother = Character('Мама',image='mother', color="#B13AEE", callback=name_callback, cb_name="mother")
-define anna = Character('Аня',image='anna', color="#E36C1C", callback=name_callback, cb_name="anna")
-define roma = Character('Рома',image='roma', color="#E38F1C", callback=name_callback, cb_name="roma")
+define anna = Character('Аня',image='anna', color="#FA5CC7", callback=name_callback, cb_name="anna")
+define roma = Character('Рома',image='roma', color="#B041F1", callback=name_callback, cb_name="roma")
 
 # Плохая концовка
 
